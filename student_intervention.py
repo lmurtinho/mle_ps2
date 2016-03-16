@@ -16,8 +16,8 @@ print "Student data read successfully!"
 # Note: The last column 'passed' is the target/label, 
 # all other are feature columns
 
-# TODO: Compute desired values - replace each 
-# '?' with an appropriate expression/function call
+# Compute desired values - replace each '?' 
+# with an appropriate expression/function call
 n_students = student_data.shape[0]
 n_features = student_data.shape[1] - 1
 n_passed = sum(student_data.passed == 'yes')
@@ -60,7 +60,8 @@ def preprocess_features(X):
     return outX
 
 X_all = preprocess_features(X_all)
-print "Processed feature columns ({}):-\n{}".format(len(X_all.columns), list(X_all.columns))
+print "Processed feature columns ({}):-\n{}".format(len(X_all.columns), 
+                                                    list(X_all.columns))
 
 
 # First, decide how many training vs test samples you want
